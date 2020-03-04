@@ -1,0 +1,219 @@
+/*Colors-----*/
+/*Fonts-----*/
+/*Overlays-----*/
+@import url("https://fonts.googleapis.com/css?family=Mukta:300,400,700&display=swap");
+main button {
+  background-color: transparent;
+  border: 1.2px solid #fff;
+  border-radius: 30px;
+  color: #fff;
+  font-family: "Mukta", sans-serif;
+  font-weight: 300;
+  font-size: 2vh;
+  padding: 2px 16px;
+}
+
+main button:hover {
+  background-color: #046ef5;
+}
+
+main button:hover, .nav-button:hover div, .nav2 .nav-links li a:hover, .social-links li a:hover {
+  -moz-transition: all 0.30s ease-in-out;
+  -webkit-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  cursor: pointer;
+}
+
+html {
+  background: url(https://miro.medium.com/max/9216/1*jaHdQs2bl_lqqsdFxJa3zQ.jpeg) no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Mukta", sans-serif;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+}
+
+.over-lay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+nav {
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nav-button {
+  position: relative;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 10px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.nav-button:hover div {
+  background-color: #046ef5;
+}
+
+.nav-button div {
+  background-color: #fff;
+  border-radius: 8px;
+  width: 37px;
+  height: 3px;
+}
+
+.nav-button div:nth-of-type(2) {
+  margin: 4px 0;
+}
+
+.menu {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav1 {
+  right: 0;
+}
+
+.nav1 img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.nav2 {
+  bottom: 0;
+  left: 0;
+}
+
+.nav2 .nav-links {
+  list-style: none;
+  padding: 0px;
+}
+
+.nav2 .nav-links li {
+  text-align: center;
+  margin: 20px 0px;
+  position: relative;
+}
+
+.nav2 .nav-links li a {
+  color: #fff;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.nav2 .nav-links li a:hover {
+  color: #046ef5;
+}
+
+main {
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main h1 {
+  margin: 0;
+  font-size: 6vh;
+  font-weight: initial;
+}
+
+main h1 span {
+  color: #046ef5;
+}
+
+main h3 {
+  text-align: center;
+  font-size: 3vh;
+  font-weight: initial;
+}
+
+/*Social Links-----------------------------------*/
+.social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline;
+  font-size: 3vh;
+}
+
+.social-links li a {
+  color: #fff;
+  margin: 0 2vh;
+}
+
+.social-links li a:hover {
+  color: #046ef5;
+}
+
+/*Media Queries-----------*/
+@media (min-width: 992px) {
+  nav .nav1 {
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+  }
+  nav .nav1 img {
+    width: 200px;
+  }
+  nav .nav2 {
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+  }
+  .nav2 .nav-links li {
+    left: 0;
+  }
+  .nav2 .nav-links li a {
+    font-size: 27px;
+  }
+  main h1 {
+    font-size: 6vw;
+  }
+}
+/*# sourceMappingURL=main.css.map */
