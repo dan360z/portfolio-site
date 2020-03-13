@@ -84,13 +84,13 @@ nav {
         padding: 0px;
         li {
             text-align: center;
-            margin: 20px 0px;
+            margin: 15px 0px;
             position: relative;
             //left: -80vw;
             a {
                 color: #fff;
                 cursor: pointer;
-                font-size: 22px;
+                font-size: 3vh;
                 &:hover {
                     color: $accent-color;
                     @extend %hover;
